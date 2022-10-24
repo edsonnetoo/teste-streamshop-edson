@@ -1,0 +1,26 @@
+<div class="container mt-3">
+    <div class="imagem-filme" style="height: 40vh;">
+        <img class="w-25 h-75 d-inline-block" src="{{filme.image}}" alt="imagemFilme">
+    </div>
+    <div class="titulo-filme">
+        <strong>{{filme.title}}</strong>
+    </div>
+    
+    <div *ngFor="let item of dadosFilme">
+        <p-card styleClass="mt-3 mb-2" class="card-cinema" subheader="{{item.address}}, {{item.addressComplement}}">
+            <ng-template pTemplate="header">
+                <div class="header-card-cinema">
+                    <i class="pi pi-heart texto-icone"></i> {{item.name}}
+                </div>
+            </ng-template>
+            <div *ngFor="let sala of item.rooms" class="detalhe-card-cinema">
+                <strong>{{sala.name}}</strong> - <div class="detalhe-tipos">{{sala.types}}</div> 
+            </div>
+            <ng-template *ngFor="let sala of item.rooms" pTemplate="footer">
+                <div *ngFor="let sessao of sala.sessions" class="botao-card-cinema">
+                    <p-button type="button" label="{{sessao.time}}" (click)="redirectCadastro()" styleClass="p-button-outlined"></p-button>
+                </div>
+            </ng-template>
+        </p-card>
+    </div>
+</div>

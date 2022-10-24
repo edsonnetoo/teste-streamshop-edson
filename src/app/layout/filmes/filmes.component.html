@@ -1,0 +1,15 @@
+<app-barra-pesquisa></app-barra-pesquisa>
+<div class="container mt-3">
+    <div class="row">
+        <ng-container *ngFor="let item of listaFilmes" >
+            <p-card class="mt-3 mb-2 card-filme" header="{{item.title}}" subheader="{{item.genres}}">
+                <ng-template pTemplate="header">
+                    <img class="img-card" src="{{item.image}}" alt="Card">
+                </ng-template>
+                <ng-template pTemplate="footer">
+                    <p-button label="Comprar" styleClass="p-button-secondary w-100" (click)="redirectCinema(item.id)"></p-button>
+                </ng-template> 
+            </p-card>
+        </ng-container>
+    </div>
+</div>

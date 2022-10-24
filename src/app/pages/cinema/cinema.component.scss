@@ -1,0 +1,36 @@
+
+.botao-card-cinema {
+    display: inline-block;
+    margin-right: 1em;
+}
+
+.imagem-filme {
+    display: flex;
+    justify-content: center;
+}
+
+.titulo-filme {
+    font-size: 1.7rem;;
+}
+
+.header-card-cinema {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.texto-icone {
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    font-size: large;
+    color: orange;
+}
+
+.detalhe-card-cinema {
+    display: flex;
+    align-items: flex-start;
+}
+
+.detalhe-tipos {
+    color: orange;
+}

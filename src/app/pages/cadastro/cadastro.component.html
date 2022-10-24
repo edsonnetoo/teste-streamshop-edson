@@ -1,0 +1,36 @@
+
+<p-toast position="bottom-right" key="br"></p-toast>
+
+<div class="container mt-5 w-100">
+    <div class="form">
+        <div class="input-nome">
+            <span class="p-float-label">
+                <input id="float-input" class="inputs" type="text" pInputText> 
+                <label for="float-input">Nome</label>
+            </span>
+        </div>
+        <div class="input-email mt-4">
+            <span class="p-float-label">
+                <input id="float-input" class="inputs" type="text" pInputText> 
+                <label for="float-input">E-mail</label>
+            </span>
+        </div>
+        <div class="input-telefone mt-4">
+            <span class="p-float-label">
+                <input id="float-input" class="inputs" type="text" pInputText> 
+                <label for="float-input">Telefone</label>
+            </span> 
+        </div>
+        <div class="checkboxes mt-4">
+            <p-checkbox name="groupname" value="val1" inputId="1"></p-checkbox>
+            <label class="label-checkbox" for="1">Quero receber notificações</label>
+        </div>
+        <div class="checkboxes mt-3">
+            <p-checkbox name="groupname" value="val1" inputId="2"></p-checkbox>
+            <label class="label-checkbox" for="2">Li e aceito os termos de uso</label>
+        </div>
+        <div class="mt-5">
+            <p-button class="botao-cadastro" type="button" label="Finalizar Cadastro" (click)="pageRedirect()" styleClass="p-button-secondary"></p-button>
+        </div>
+    </div>
+</div>
